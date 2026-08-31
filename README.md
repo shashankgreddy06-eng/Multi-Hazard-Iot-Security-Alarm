@@ -5,6 +5,8 @@ An ESP32-powered multi-hazard security node that combines perimeter defense, opt
 ---
 
 <img width="767" height="366" alt="Screenshot 2026-08-31 222508" src="https://github.com/user-attachments/assets/4830e983-7bf1-4e60-8ed3-c0b0544864a0" />
+<img width="296" height="641" alt="WhatsApp Image 2026-08-31 at 10 27 53 PM (1)" src="https://github.com/user-attachments/assets/0185315a-525f-4d3e-879a-ae727ece600e" />
+<img width="468" height="351" alt="WhatsApp Image 2026-08-31 at 10 27 53 PM" src="https://github.com/user-attachments/assets/078c42c9-aa83-4ca0-b9f6-f0ca5d71ca21" />
 
 
 ##  Key Features
@@ -33,5 +35,26 @@ An ESP32-powered multi-hazard security node that combines perimeter defense, opt
 
 ---
 
-##  Finite State Machine (FSM) Workflow
+1. **STANDBY:** Optical defenses are disarmed. Flame detection remains continuously active in the background.
+2. **ARMED:** Laser is energized; all tamper and perimeter sensors are actively evaluated.
+3. **WARNING:** Proximity breach inside 30 cm starts a 10-second pulsing warning buzzer.
+4. **ALARM:** Siren sounds continuously and an encrypted HTTPS alert is pushed to Telegram with the breach reason.
+
+---
+
+## ⚡ Getting Started
+
+### 1. Prerequisites & Libraries
+Install the required libraries in the Arduino IDE (**Tools $\rightarrow$ Manage Libraries**):
+* `DHT sensor library` by Adafruit
+* `Adafruit Unified Sensor`
+
+### 2. Configure Credentials
+Update the configuration section in the `.ino` sketch:
+```cpp
+const char* ssid     = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
+
+const String botToken = "YOUR_TELEGRAM_BOT_TOKEN";
+const String chatId   = "YOUR_TELEGRAM_CHAT_ID";
 
