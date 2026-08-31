@@ -4,17 +4,8 @@ An ESP32-powered multi-hazard security node that combines perimeter defense, opt
 
 ---
 
-## 📸 Project Showcase
+<img width="767" height="366" alt="Screenshot 2026-08-31 222508" src="https://github.com/user-attachments/assets/4830e983-7bf1-4e60-8ed3-c0b0544864a0" />
 
-| Hardware Prototype | Web Telemetry Dashboard | Mobile Telegram Alerts |
-| :---: | :---: | :---: |
-| ![Hardware Setup](<img width="468" height="351" alt="WhatsApp Image 2026-08-31 at 10 27 53 PM" src="https://github.com/user-attachments/assets/01d3f0a7-6ec7-4dec-9bc3-9f78ee16b495" />
-) | ![Web Dashboard](<img width="500" height="366" alt="Screenshot 2026-08-31 222508" src="https://github.com/user-attachments/assets/2118f6fb-b361-4f4a-b654-2f2434d6fdf9" />
-) | ![Telegram Alert](<img width="296" height="641" alt="WhatsApp Image 2026-08-31 at 10 27 53 PM (1)" src="https://github.com/user-attachments/assets/cd50d100-7be0-4b6a-9ed8-78266b095153" />
-) |
-| *ESP32 Multi-Sensor Breadboard Node* | *Real-Time Asynchronous Web UI* | *Sub-2s Encrypted Breach Alerts* |
-
----
 
 ##  Key Features
 
